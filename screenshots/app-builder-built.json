@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "PekAI",
+      "hasCanvas": false,
+      "bodyTextLen": 4203,
+      "bodyTextHash": "b90ae07a5cffb72ea8d96f191bbd345f8f30320f5cfa5a0a5fb7cb7a8b64a859",
+      "bodyTextPrefix": "P PekAICompañero de Idiomas con Voz en Tiempo Real Bóveda (0) IM",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "PekAI",
+      "hasCanvas": false,
+      "bodyTextLen": 4160,
+      "bodyTextHash": "410dae9e865afde2cc3bb95e555c46f7a30d360540be093ccc7779976766537f",
+      "bodyTextPrefix": "P PekAI Bóveda (0) IMPULSADO POR GROK VOICE PekAI · Compañero de",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
