@@ -4,9 +4,7 @@ import {
   Volume2,
   Trash2,
   X,
-  Languages,
   Search,
-  Sparkles,
   BookOpen,
 } from 'lucide-react';
 import { SavedVocabularyItem } from '../types';

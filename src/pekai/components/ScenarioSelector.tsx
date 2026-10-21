@@ -44,7 +44,7 @@ export const ScenarioSelector: React.FC<ScenarioSelectorProps> = ({
   onSelectLanguage,
   selectedLevel,
   onSelectLevel,
-  selectedVoice,
+  selectedVoice: _selectedVoice,
   onSelectVoice,
   selectedTutorName,
   onSelectTutorName,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Mic, Volume2, Sparkles, Loader2, VolumeX } from 'lucide-react';
+import { Mic, Volume2, Loader2, VolumeX } from 'lucide-react';
 import { SessionStatus } from '../hooks/useLiveVoiceSession';
 
 interface AudioVisualizerOrbProps {

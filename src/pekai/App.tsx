@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import {
   SUPPORTED_LANGUAGES,
   PRESET_SCENARIOS,
-  PROFICIENCY_LEVELS,
 } from './data/languages';
 import {
   LanguageConfig,
