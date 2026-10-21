@@ -4,20 +4,16 @@ import {
   MicOff,
   Volume2,
   Send,
-  Languages,
   CheckCircle2,
   Clock,
   Sparkles,
-  HelpCircle,
   Bookmark,
-  BookmarkCheck,
   ChevronDown,
   ChevronUp,
   Flame,
   MessageSquare,
   Play,
   RotateCcw,
-  Sliders,
   Award,
   Lightbulb,
 } from 'lucide-react';
@@ -102,12 +98,15 @@ export const LiveConversationRoom: React.FC<LiveConversationRoomProps> = ({
   }, [messages, interimUserText, interimTutorText]);
 
   // Request suggestions when new tutor turn arrives
+  const tutorTurnCount = messages.filter((m) => m.role === 'tutor').length;
+  // Intentionally keyed on tutor turn count only (not every message change).
   useEffect(() => {
     const lastTutorMsg = [...messages].reverse().find((m) => m.role === 'tutor');
     if (lastTutorMsg) {
       fetchSuggestions(lastTutorMsg.text);
     }
-  }, [messages.filter((m) => m.role === 'tutor').length]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [tutorTurnCount]);
 
   const fetchSuggestions = async (tutorMsg: string) => {
     try {
